@@ -1,0 +1,87 @@
+@charset "utf-8";
+
+/*input*/
+input[type=text] {display: inline-block; width: 200px; height: 30px; padding: 0 10px; border: 1px solid #c4d0e3; border-radius: 3px; box-shadow: inset 1px 1px 3px #f2f2f2; box-sizing: border-box;}
+input[type=password] {display: inline-block; width: 200px; height: 30px; padding: 0 10px; border: 1px solid #c4d0e3; border-radius: 3px; box-shadow: inset 1px 1px 3px #f2f2f2; box-sizing: border-box;}
+input[type=checkbox] {vertical-align: middle;}
+input.full {width: 100%;}
+input.half {width: 50%;}
+input.number {width: 90px;}
+select {display: inline-block; height: 30px; padding: 0 10px; border: 1px solid #c4d0e3; border-radius: 3px; vertical-align: bottom; box-shadow: inset 1px 1px 3px #f2f2f2; box-sizing: border-box; color: #4d5664;}
+textarea {display: block; width: 100%; height: 150px; border: 1px solid #c4d0e3; border-radius: 3px; box-shadow: inset 1px 1px 3px #f2f2f2; box-sizing: border-box;}
+
+/*table*/
+table tr {border-bottom: 1px dotted #dae1e6;}
+table tr td {padding: 10px 0;}
+table tr td.th {width: 140px; padding-right: 20px; line-height: 48px; text-align: right; box-sizing: border-box; color: #597a96; font-weight: bold;}
+table tr td.lines {line-height: 20px;}
+table tr td.long {line-height: 1.5em; word-break: keep-all;}
+table tr td p + p {margin-top: 3px;}
+
+/*layout*/
+section.layout {overflow: hidden; margin: 10px 0;}
+section.layout > div.layout-box {min-height: 100px; padding: 10px 30px; border: 1px solid #c4d0e3; background: #fff; box-sizing: border-box;}
+section.layout > div.layout-box > h3 {line-height: 40px; color: #4d5664;}
+section.layout.colume-2 div.layout-box {float: left; width: 49.5%;}
+section.layout.colume-2 div.layout-box + section.layout-box {margin-left: 1%;}
+section.layout.colume-2-1 div.layout-box {float: left; width: 33%;}
+section.layout.colume-2-1 div.layout-box:nth-child(1) {width: 66%; margin-right: 1%;}
+section.layout.colume-1-2 div.layout-box {float: left; width: 66%;}
+section.layout.colume-1-2 div.layout-box:nth-child(1) {width: 33%; margin-right: 1%;}
+section.layout.colume-3 div.layout-box {float: left; width: 32.6%;}
+section.layout.colume-3 div.layout-box + section.layout-box {margin-left: 1%;}
+
+/*button*/
+.btn {position: relative; display: inline-block; border-radius: 3px; text-align: center; color: #fff; background: #5c76a7; box-sizing: border-box;}
+.btn.tiny {min-width: 40px; height: 22px; line-height: 22px;  padding: 0 8px; font-size: 11px;}
+.btn.small {min-width: 50px; height: 30px; line-height: 30px; padding: 0 12px; font-size: 13px;}
+.btn.midium {min-width: 70px; height: 35px; line-height: 35px; padding: 0 15px; font-size: 17px;}
+.btn.big {min-width: 120px; height: 45px; line-height: 45px; padding: 0 20px; font-size: 20px;}
+
+.btn.blue {border: 1px solid #4f6898; background: #5c76a7;}
+.btn.red {border: 1px solid #9f3a3a; background: #d45353;}
+.btn.green {border: 1px solid #3e6936; background: #58934d;}
+.btn.yellow {border: 1px solid #af9d3e; background: #ddc855;}
+.btn.pink {border: 1px solid #9f4475; background: #cb5896;}
+.btn.sky {border: 1px solid #4b8e8c; background: #69b3b9;}
+.btn.white {border: 1px solid #ccc; color: #717171; background: #f0f0f0;}
+.btn.black {border: 1px solid #333; background: #484848;}
+
+div.button-box {text-align: right; overflow: hidden; margin: 20px 0;}
+div.button-box:after {content: ''; display: block; clear: both;}
+div.button-box.left {text-align: left;}
+div.button-box.right {text-align: right;}
+div.button-box.center {text-align: center;}
+
+.btn.left {float: left; margin: 0 2px;}
+.btn.iconright.tiny {padding-right: 20px;}
+.btn.iconright.small {padding-right: 30px;}
+.btn.iconright.midium {padding-right: 40px;}
+.btn.iconright.big {padding-right: 50px;}
+.btn.iconleft.tiny {padding-left: 20px;}
+.btn.iconleft.small {padding-left: 30px;}
+.btn.iconleft.midium {padding-left: 40px;}
+.btn.iconleft.big {padding-left: 50px;}
+.btn.iconcenter {padding: 0;}
+.btn.iconcenter.tiny {min-width: 30px;}
+.btn.iconcenter.small {min-width: 50px;}
+.btn.iconcenter.midium {min-width: 70px;}
+.btn.iconcenter.big {min-width: 100px;}
+.btn > span.icon {position: absolute; top: 0;}
+.btn.iconcenter > span.icon {position: static;}
+.btn > span.icon.right {right: 0;}
+.btn > span.icon.left {left: 0;}
+.btn.tiny > span.icon {padding: 0 5px;}
+.btn.small > span.icon {padding: 0 7px;}
+.btn.midium > span.icon {padding: 0 10px;}
+.btn.big > span.icon {padding: 0 15px;}
+
+
+
+
+
+
+
+
+
+

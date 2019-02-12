@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="utf-8" />
+        <title>관리자 페이지</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=1200" />
+        <meta name="description" content="관리자 페이지" />
+        <link rel="shortcut icon" href="../favicon.ico" type="image/x-icon" />
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+        <link rel="stylesheet" href="../css/style.css" />
+        <link rel="stylesheet" href="../css/form.css" />
+        <link rel="stylesheet" href="../js/jquery-ui-1.12.1/jquery-ui.min.css">
+        <script src="../js/jquery-3.2.1.min.js"></script>
+        <script src="../js/common.js"></script>
+        <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+        <script src="../js/jquery-ui-1.12.1/jquery-ui.min.js"></script>
+        <script src="../js/jquery-ui-1.12.1/datepicker-ko.js"></script>
+    </head>
+    <body class="sub design layout">
+        <a href="#main" id="skip-nav">본문 바로가기</a>
+        <div id="wrapper">
+            <header id="header">
+                <div class="brand">
+                    <h1 class="logo"><a href="#"><img src="../img/logo.png" alt="findash" /></a></h1>
+                </div>
+                <div class="top-util">
+                    <a href="#" class="gnb-toggle"><i class="fas fa-bars"></i></a>
+                    <form class="search-box">
+                        <label for="search">Type fore search</label>
+                        <input type="text" id="search" />
+                        <input type="image" src="../img/header-magnifier-tool.png" alt="search" />
+                    </form>
+                    <a href="#" class="user">
+                        <span class="face"><img src="../img/face.jpg" alt="" /></span>
+                        <span class="name">관리자</span>
+                    </a>
+                    <a href="#" class="logout">
+                        <span class="logout">Logout</span>
+                    </a>
+                </div>
+            </header>
+            <div id="gnb">
+                <nav>
+                    <ul>
+                        <li>
+                            <a href="#">
+                                <span>Dashboard</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <span>Information</span>
+                            </a>
+                            <ul>
+                                <li><a href="#">profile</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <span>Design</span>
+                            </a>
+                            <ul>
+                                <li><a href="../design_form.html">form</a></li>
+                                <li><a href="design_layout.html">layout</a></li>
+                                <li><a href="design_button.html">button</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <span>Support</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <span>Function</span>
+                            </a>
+                            <ul>
+                                <li><a href="#">general</a></li>
+                                <li><a href="#">writing</a></li>
+                                <li><a href="#">pagenevi</a></li>
+                                <li><a href="#">all settings</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <span>News</span>
+                            </a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+            <main id="main">
+                <section class="main-box">
+                    <h2>Layout</h2>
+                    <p>레이아웃(1열, 2열(1:1, 2:1, 1:2), 3열)</p>
+                    <section class="layout colume-1">
+                        <div class="layout-box">
+                            <h3>1열</h3>
+                        </div>
+                    </section>
+                    <section class="layout colume-2">
+                        <div class="layout-box">
+                            <h3>2열 (1 : 1)</h3>
+                        </div>
+                        <div class="layout-box">
+                            <h3>2열 (1 : 1)</h3>
+                        </div>
+                    </section>
+                    <section class="layout colume-2-1">
+                        <div class="layout-box">
+                            <h3>2열 (2 : 1)</h3>
+                        </div>
+                        <div class="layout-box">
+                            <h3>2열 (2 : 1)</h3>
+                        </div>
+                    </section>
+                    <section class="layout colume-1-2">
+                        <div class="layout-box">
+                            <h3>2열 (1 : 2)</h3>
+                        </div>
+                        <div class="layout-box">
+                            <h3>2열 (1 : 2)</h3>
+                        </div>
+                    </section>
+                    <section class="layout colume-3">
+                        <div class="layout-box">
+                            <h3>3열</h3>
+                        </div>
+                        <div class="layout-box">
+                            <h3>3열</h3>
+                        </div>
+                        <div class="layout-box">
+                            <h3>3열</h3>
+                        </div>
+                    </section>
+                </section>    
+            </main>
+            <footer id="footer">
+                <p class="copyright">© 2019 DASH.</p>
+            </footer>
+        </div> 
+    </body>
+</html>

@@ -1,0 +1,137 @@
+@charset "utf-8";
+@import url('https://fonts.googleapis.com/css?family=Roboto:400,500,700');
+
+/*reset*/
+body {margin: 0;}
+h1, h2, h3, h4, h5, h6, ol, ul, li, dl, dt, dd, p {margin: 0; padding: 0;}
+header, main, footer, article, section, aside, nav {display: block;}
+a {text-decoration: none; color: inherit;}
+a img {border: none;}
+li {list-style: none;}
+table {border-collapse: collapse;}
+address, em {font-style: normal;}
+
+/*common*/
+body {font: 13px '나눔고딕', '돋움', Dotum, Helvetica, 'Apple SD Gothic Neo', 'sans-serif'; color: #333; background: #f1f6fe;}
+#skip-nav {position: fixed; top: -40px; left: 0; width: 100%; line-height: 40px; text-align: center; font-size: 17px; color: #fff; background: rgba(0, 0, 0, 0.5); z-index: 10000; transition: 0.3s;}
+#skip-nav:focus {top: 0;}
+#wrapper {min-width: 1024px;}
+
+/*header*/
+#header {position: fixed; top: 0; left: 0; width: 100%; height: 90px; box-shadow: 0 3px 4px rgba(0, 0, 0, 0.1); background: #fff; z-index: 10;}
+#header div.brand {position: absolute; top: 0; left: 0; width: 270px; height: 90px; background: #303d50; transition: 0.3s;}
+#header.on div.brand {width: 70px;}
+#header div.brand a {position: absolute; top: 50%; left: 40px; transform: translate(0, -50%); transition: 0.3s;}
+#header.on  div.brand a {left: 15px; width: 25px; height: 31px; overflow: hidden;}
+#header div.top-util {width: 100%; height: 90px; padding-left: 270px; box-sizing: border-box; text-align: right; transition: 0.3s;}
+#header.on div.top-util {padding-left: 70px;}
+#header div.top-util a.gnb-toggle {display: block; float: left; line-height: 90px;}
+#header div.top-util a.gnb-toggle i {font-size: 23px; color: #4fc1ee;}
+#header div.top-util form.search-box {float: left; margin-left: 30px; line-height: 90px; color: #9aa8be;}
+#header div.top-util form.search-box input[type=text] {display: inline-block; width: 200px; height: 30px; padding: 0 35px 0 10px; border: 1px solid #fff; border-bottom-color: #c4d0e3; border-radius: 3px; box-sizing: border-box;}
+#header div.top-util form.search-box input[type=image] {vertical-align: middle; transform: translateX(-35px);}
+#header div.top-util a.user {position: relative; display: inline-block; width: 180px; height: 90px;}
+#header div.top-util a.user span.face {position: absolute; top: 50%; left: 0; transform: translate(0, -50%); width: 50px; height: 50px; border: 6px solid #c4d0e3; border-radius: 50px; overflow: hidden; z-index: 1;}
+#header div.top-util a.user span.face img {width: 100%; height: auto;}
+#header div.top-util a.user span.name {position: absolute; left: 50px; top: 50%; transform: translate(0, -50%); width: 125px; padding-left: 20px; line-height: 30px; text-align: left; border-radius: 20px; box-sizing: border-box; color: #2d3f4b; background: #c4d0e3 url(../img/header-arrow-down.png) no-repeat center right 15px;}
+#header div.top-util a.logout {position: relative; display: inline-block; width: 110px; height: 90px;}
+#header div.top-util a.logout span.logout {position: absolute; top: 50%; left: 0; transform: translate(0, -50%); width: 75px; height: 30px; border-radius: 20px; line-height: 30px; text-align: center; color: #fff; background: #4fc1ee;}
+
+/*gnb*/
+#gnb {position: fixed; top: 0; left: 0; width: 270px; height: 100%; padding-top: 90px; box-sizing: border-box; background: #273140; transition: 0.3s;}
+#gnb.on {left: -100%;}
+#gnb nav > ul > li > a {position: relative; display: block; padding-left: 85px; line-height: 55px; color: #7f96a3; font-weight: bold;}
+#gnb nav > ul > li:nth-child(1) > a {background: url(../img/gnb-icon01.png) no-repeat center left 40px;}
+#gnb nav > ul > li:nth-child(2) > a {background: url(../img/gnb-icon02.png) no-repeat center left 40px;}
+#gnb nav > ul > li:nth-child(3) > a {background: url(../img/gnb-icon03.png) no-repeat center left 40px;}
+#gnb nav > ul > li:nth-child(4) > a {background: url(../img/gnb-icon04.png) no-repeat center left 40px;}
+#gnb nav > ul > li:nth-child(5) > a {background: url(../img/gnb-icon05.png) no-repeat center left 40px;}
+#gnb nav > ul > li:nth-child(6) > a {background: url(../img/gnb-icon06.png) no-repeat center left 40px;}
+#gnb nav > ul > li > a:hover,
+#gnb nav > ul > li > a:focus,
+#gnb nav > ul > li.on > a {color: #4fc1ee; background-color: #1a222f;}
+#gnb nav > ul > li > a > i {position: absolute; top: 50%; right: 20px; transform: translate(0, -50%);}
+#gnb nav > ul > li > ul {display: none;}
+#gnb nav > ul > li > ul > li > a {display: block; padding-left: 85px; border-bottom: 1px solid #273140; line-height: 30px; color: #a5c5d8; background-color: #3a4860;}
+#gnb nav > ul > li > ul > li > a:hover {background: #2f3e58;}
+
+/*main*/
+#main {padding: 90px 0 0 270px; transition: 0.3s;}
+section.main-box {padding: 20px 30px;}
+#main.on {padding: 90px 0 0 0;}
+section.main-box h2 {line-height: 30px; color: #4d5664;}
+section.main-box p {line-height: 20px; color: #b4bfd1;}
+section.layout-box ul:after {content: ''; display: block; clear: both;}
+section.layout-box ul.list li {float: left; padding-right: 30px; line-height: 30px;}
+
+/*이미지 첨부*/
+section.layout-box ul.preview li {float: left; width: 200px; height: 200px; margin: 0 10px 10px 0; padding: 5px; border: 1px solid #c4d0e3; border-radius: 3px; box-sizing: border-box; background: #f9fafb;}
+section.layout-box ul.preview span.image {position: relative; display: inline-block; width: 100%; height: 130px; border: 1px solid #c4d0e3; text-align: center; box-sizing: border-box; overflow: hidden; background: #fff;}
+section.layout-box ul.preview span.image span.samplae-icon {line-height: 130px; text-align:  center; font-size: 40px; color: #dae1e6;}
+section.layout-box ul.preview span.image img {max-height: 100%;}
+section.layout-box ul.preview span.measurement {position: absolute; bottom: -17px; left: 0; width: 100%; line-height: 17px; text-align: center; font-size: 13px; color: #fff; background: rgba(0, 0, 0, 0.3); transition: 0.3s;}
+section.layout-box ul.preview li:hover span.measurement,
+section.layout-box ul.preview li:focus span.measurement {bottom: 0;}
+section.layout-box ul.preview span.file-info {display: inline-block; width: 100%; margin: 8px 0;}
+section.layout-box ul.preview span.icon {display: inline-block; margin: 0 8px; color: #647dac;}
+section.layout-box ul.preview span.size {display: inline-block; padding: 2px 5px; border-radius: 3px; color: #fff; background: #89aacb;}
+section.layout-box ul.preview span.spin i {animation: spin 3.2s infinite;}
+section.layout-box ul.preview a.prev {position: absolute; top: 5px; left: 5px; width: 24px; line-height: 24px; border-radius: 30px; text-align: center; background: rgba(0, 0, 0, 0.3); color: #fff; opacity: 0; transition: 0.3s;}
+section.layout-box ul.preview li:hover a.prev,
+section.layout-box ul.preview li:focus a.prev {opacity: 1;}
+section.layout-box ul.preview li a.prev:focus {opacity: 1;}
+section.layout-box ul.preview a.next {position: absolute; top: 5px; right: 5px; width: 24px; line-height: 24px; border-radius: 30px; text-align: center; background: rgba(0, 0, 0, 0.3); color: #fff; opacity: 0; transition: 0.3s;}
+section.layout-box ul.preview li:hover a.next,
+section.layout-box ul.preview li:focus a.next {opacity: 1;}
+section.layout-box ul.preview li a.next:focus {opacity: 1;}
+section.layout-box ul.preview a.download {position: absolute; top: 50%; left: 50%; width: 30px; line-height: 30px; transform: translate(-50%, -50%); border-radius: 30px; text-align: center; background: rgba(0, 0, 0, 0.3); color: #fff; opacity: 0; transition: 0.3s;}
+section.layout-box ul.preview li:hover a.download,
+section.layout-box ul.preview li:focus a.download,
+section.layout-box ul.preview li a.download:focus {width: 40px; line-height: 40px; font-size: 15px; opacity: 1;}
+section.layout-box ul.preview li:hover a.download:hover,
+section.layout-box ul.preview li a.download:focus,
+section.layout-box ul.preview li:hover a.prev:hover,
+section.layout-box ul.preview li a.prev:focus,
+section.layout-box ul.preview li:hover a.next:hover,
+section.layout-box ul.preview li a.next:focus {background: rgba(0, 0, 0, 0.6);}
+section.layout-box ul.preview a.delete {float: right; width: 25px; height: 25px; border-radius: 30px; transform: translateY(-2px); text-align: center; font-size: 22px; color: #d45353;}
+section.layout-box ul.preview a.delete:hover,
+section.layout-box ul.preview a.delete:focus {color: #ea9393;}
+
+/*파일첨부*/
+section.layout-box ul.file li {position: relative; width: 100%; margin-bottom: 6px; border: 1px solid #c4d0e3; border-radius: 3px; box-sizing: border-box;}
+section.layout-box ul.file span.file-info {line-height: 30px;}
+section.layout-box ul.file span.size {padding: 2px 5px; border-radius: 3px; color: #fff; background: #89aacb;}
+section.layout-box ul.file span.icon {display: inline-block; margin: 0 8px; color: #647dac;}
+section.layout-box ul.file span.spin i {animation: spin 3.2s infinite;}
+section.layout-box ul.file a.file-name {display: inline-block; width: 70%;}
+section.layout-box ul.file a.file-name:hover,
+section.layout-box ul.file a.file-name:focus {font-weight: 700;}
+section.layout-box ul.file span.right-side {float: right; margin: 5px;}
+section.layout-box ul.file span.function {position: absolute; right: 5px; line-height: 30px;}
+section.layout-box ul.file a.up {display: inline-block; width: 24px; line-height: 24px; border-radius: 30px; text-align: center; background: rgba(0, 0, 0, 0.3); color: #fff; opacity: 0; transition: 0.3s;}
+section.layout-box ul.file li:hover a.up,
+section.layout-box ul.file li:focus a.up {opacity: 1;}
+section.layout-box ul.file li a.up:focus {opacity: 1;}
+section.layout-box ul.file a.down {display: inline-block; width: 24px; line-height: 24px; border-radius: 30px; text-align: center; background: rgba(0, 0, 0, 0.3); color: #fff; opacity: 0; transition: 0.3s;}
+section.layout-box ul.file li:hover a.down,
+section.layout-box ul.file li:focus a.down {opacity: 1;}
+section.layout-box ul.file li a.down:focus {opacity: 1;}
+section.layout-box ul.file li:hover a.up:hover,
+section.layout-box ul.file li:focus a.up:focus,
+section.layout-box ul.file li:hover a.down:hover,
+section.layout-box ul.file li:focus a.down:focus {background: rgba(0, 0, 0, 0.6);}
+section.layout-box ul.file a.delete {display: inline-block; width: 25px; line-height: 25px; border-radius: 30px; transform: translateY(4px); text-align: center; font-size: 22px; color: #d45353;}
+section.layout-box ul.file a.delete:hover,
+section.layout-box ul.file a.delete:focus {color: #ea9393;}
+
+@keyframes spin {
+    0% {transform: rotate(0deg);}
+    100% {transform: rotate(360deg);}
+}
+
+
+
+
+
+

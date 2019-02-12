@@ -1,0 +1,406 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="utf-8" />
+        <title>관리자 페이지</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=1200" />
+        <meta name="description" content="관리자 페이지" />
+        <link rel="shortcut icon" href="../favicon.ico" type="image/x-icon" />
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+        <link rel="stylesheet" href="../css/style.css" />
+        <link rel="stylesheet" href="../css/form.css" />
+        <link rel="stylesheet" href="../js/jquery-ui-1.12.1/jquery-ui.min.css">
+        <script src="../js/jquery-3.2.1.min.js"></script>
+        <script src="../js/common.js"></script>
+        <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+        <script src="../js/jquery-ui-1.12.1/jquery-ui.min.js"></script>
+        <script src="../js/jquery-ui-1.12.1/datepicker-ko.js"></script>
+    </head>
+    <body class="sub design form">
+        <a href="#main" id="skip-nav">본문 바로가기</a>
+        <div id="wrapper">
+            <header id="header">
+                <div class="brand">
+                    <h1 class="logo"><a href="#"><img src="../img/logo.png" alt="findash" /></a></h1>
+                </div>
+                <div class="top-util">
+                    <a href="#" class="gnb-toggle"><i class="fas fa-bars"></i></a>
+                    <form class="search-box">
+                        <label for="search">Type fore search</label>
+                        <input type="text" id="search" />
+                        <input type="image" src="../img/header-magnifier-tool.png" alt="search" />
+                    </form>
+                    <a href="#" class="user">
+                        <span class="face"><img src="../img/face.jpg" alt="" /></span>
+                        <span class="name">관리자</span>
+                    </a>
+                    <a href="#" class="logout">
+                        <span class="logout">Logout</span>
+                    </a>
+                </div>
+            </header>
+            <div id="gnb">
+                <nav>
+                    <ul>
+                        <li>
+                            <a href="#">
+                                <span>Dashboard</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <span>Information</span>
+                            </a>
+                            <ul>
+                                <li><a href="#">profile</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <span>Design</span>
+                            </a>
+                            <ul>
+                                <li><a href="design_form.html">form</a></li>
+                                <li><a href="page/design_layout.html">layout</a></li>
+                                <li><a href="page/design_button.html">button</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <span>Support</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <span>Function</span>
+                            </a>
+                            <ul>
+                                <li><a href="#">general</a></li>
+                                <li><a href="#">writing</a></li>
+                                <li><a href="#">pagenevi</a></li>
+                                <li><a href="#">all settings</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <span>News</span>
+                            </a>
+                        </li>
+                    </ul>    
+                </nav>
+            </div>
+            <main id="main">
+                <section class="main-box">
+                    <h2>Form</h2>
+                    <p>기본폼 정의(input, textarea, checkbox, radio, image, file 등)</p>
+                    <section class="layout colume1">
+                        <div class="layout-box">
+                            <h3>Basic Form</h3>
+                            <table>
+                                <tbody>
+                                    <tr>
+                                        <td class="th">
+                                            <label for="id">아이디</label>
+                                        </td>
+                                        <td>
+                                            <input type="text" id="id" />
+                                            <a href="#" class="btn small blue">중복확인</a>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="th">
+                                            <label for="pw">비밀번호</label>
+                                        </td>
+                                        <td>
+                                            <input type="password" id="pw" />
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="th">
+                                            <label for="email1">이메일 주소</label>
+                                        </td>
+                                        <td>
+                                            <input type="text" id="email1" />
+                                            <span>@</span>
+                                            <select title="이메일 주소 목록">
+                                                <option>-이메일 선택-</option>
+                                                <option>naver.com</option>
+                                                <option>gmail.com</option>
+                                            </select>
+                                            <input type="text" id="email2" title="이메일 주소 직접입력" />
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="th">
+                                            참고사항
+                                        </td>
+                                        <td class="long">
+                                            그들에게 품었기 이것이야말로 청춘에서만 청춘의 그러므로 봄바람이다. 아니더면, 모래뿐일 않는 것이다. 곧 싹이 때에, 있는가? 우는 열매를 물방아 무엇을 얼마나 약동하다. 눈에 것이다.보라, 설레는 그들은 그들은 많이 인류의 주는 황금시대를 때문이다. 끓는 수 미묘한 갑 새가 우는 트고, 가치를 사막이다. 있는 품었기 사랑의 인생에 구하지 황금시대의 가진 인간에 것이다. 소금이라 옷을 위하여, 이것은 그들의 구하지 그들에게 능히 아니다. 웅대한 동산에는 피어나는 그들의 힘차게 있으랴? 가슴에 찾아다녀도, 그러므로 인간은 인간이 그들의 그들의 갑 커다란 봄바람이다.
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="th">
+                                            <label for="title">제목</label>
+                                        </td>
+                                        <td>
+                                            <input type="text" id="title" class="full" />
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="th">
+                                            <label for="zip">주소</label>
+                                        </td>
+                                        <td>
+                                            <p class="zip">
+                                                <input type="text" id="zip" class="number" />
+                                                <a href="#" class="btn small default">우편번호 선택</a>
+                                            </p>
+                                            <p class="addr">
+                                                <input type="text" id="addr" class="half" title="상세 주소" />
+                                            </p>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="th">
+                                            <label for="phone1">휴대전화</label>
+                                        </td>
+                                        <td>
+                                            <input type="text" id="phone1" class="number" title="휴대전화 첫자리" />
+                                            <span>-</span>
+                                            <input type="text" id="phone2" class="number" title="휴대전화 둘째자리" />
+                                            <span>-</span>
+                                            <input type="text" id="phone3" class="number" title="휴대전화 셋재자리" />
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="th">
+                                            <label for="grade">회원등급</label>
+                                        </td>
+                                        <td>
+                                            <select id="grade">
+                                                <option>-회원등급선택-</option>
+                                                <option>일반회원</option>
+                                                <option>기업회원</option>
+                                                <option>관리자</option>
+                                            </select>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="th">
+                                            <label for="greet">가입인사</label>
+                                        </td>
+                                        <td>
+                                            <textarea id="greet"></textarea>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="th">
+                                            <label for="interest">관심분야</label>
+                                        </td>
+                                        <td>
+                                            <ul class="list">
+                                                <li>
+                                                    <input type="checkbox" id="interest1" />
+                                                    <label for="interest1">농구</label>
+                                                </li>
+                                                <li>
+                                                    <input type="checkbox" id="interest2" />
+                                                    <label for="interest2">영화감상</label>
+                                                </li>
+                                                <li>
+                                                    <input type="checkbox" id="interest3" />
+                                                    <label for="interest3">등산</label>
+                                                </li>
+                                                <li>
+                                                    <input type="checkbox" id="interest4" />
+                                                    <label for="interest4">여행</label>
+                                                </li>
+                                                <li>
+                                                    <input type="checkbox" id="interest5" />
+                                                    <label for="interest5">십자수</label>
+                                                </li>
+                                                <li>
+                                                    <input type="checkbox" id="interest6" />
+                                                    <label for="interest6">인터넷쇼핑</label>
+                                                </li>
+                                                <li>
+                                                    <input type="checkbox" id="interest7" />
+                                                    <label for="interest7">독서</label>
+                                                </li>
+                                                <li>
+                                                    <input type="checkbox" id="interest8" />
+                                                    <label for="interest8">바둑</label>
+                                                </li>
+                                                <li>
+                                                    <input type="checkbox" id="interest9" />
+                                                    <label for="interest9">축구</label>
+                                                </li>
+                                                <li>
+                                                    <input type="checkbox" id="interest10" />
+                                                    <label for="interest10">TV시청</label>
+                                                </li>
+                                                <li>
+                                                    <input type="checkbox" id="interest11" />
+                                                    <label for="interest11">프로그래밍</label>
+                                                </li>
+                                                <li>
+                                                    <input type="checkbox" id="interest12" />
+                                                    <label for="interest12">해양스포츠</label>
+                                                </li>
+                                                <li>
+                                                    <input type="checkbox" id="interest13" />
+                                                    <label for="interest13">네트워킹</label>
+                                                </li>
+                                                <li>
+                                                    <input type="checkbox" id="interest14" />
+                                                    <label for="interest14">파티</label>
+                                                </li>
+                                                <li>
+                                                    <input type="checkbox" id="interest15" />
+                                                    <label for="interest15">요리</label>
+                                                </li>
+                                            </ul>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="th">
+                                            <label for="sex">성별</label>
+                                        </td>
+                                        <td>
+                                            <ul class="list">
+                                                <li>
+                                                    <input type="radio" name="sex" id="sex1" checked />
+                                                    <label for="sex1">남성</label>
+                                                </li>
+                                                <li>
+                                                    <input type="radio" name="sex" id="sex2" />
+                                                    <label for="sex2">여성</label>
+                                                </li>
+                                            </ul>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="th">
+                                            <label for="date1">날짜선택</label>
+                                        </td>
+                                        <td>
+                                            <input type="text" id="date1" class="number" />
+                                            <a href="#" class="btn small iconcenter default date1" title="시작 날짜 선택"><i class="far fa-calendar"></i></a>
+                                            <select id="hour1">
+                                                <option>00</option>
+                                                <option>06</option>
+                                                <option>12</option>
+                                                <option>18</option>
+                                                <option>23</option>
+                                            </select>
+                                            <span>시</span>
+                                            <select id="min1">
+                                                <option>00</option>
+                                                <option>15</option>
+                                                <option>30</option>
+                                                <option>45</option>
+                                            </select>
+                                            <span>분 ~</span>
+                                            <input type="text" id="date2" class="number" title="종료 날짜" />
+                                            <a href="#" class="btn small default iconcenter date2" title="종료 날짜 선택"><i class="far fa-calendar"></i></a>
+                                            <select id="hour2">
+                                                <option>00</option>
+                                                <option>06</option>
+                                                <option>12</option>
+                                                <option>18</option>
+                                                <option>23</option>
+                                            </select>
+                                            <span>시</span>
+                                            <select id="min2">
+                                                <option>00</option>
+                                                <option>15</option>
+                                                <option>30</option>
+                                                <option>45</option>
+                                            </select>
+                                            <span>분</span>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="th lines">
+                                            <label for="image">이미지첨부<br />(대표이미지)</label>
+                                        </td>
+                                        <td>
+                                            <ul class="preview">
+                                                <li class="no-image">
+                                                    <span class="image">
+                                                        <span class="samplae-icon"><i class="far fa-image"></i></span></span>
+                                                    <span class="file-info"><span class="icon"><i class="fas fa-exclamation-triangle"></i></span>No image</span>
+                                                </li>
+                                                <li class="uploading">
+                                                    <span class="image">
+                                                        <span class="samplae-icon spin"><i class="fas fa-spinner"></i></span>
+                                                    </span>
+                                                    <span class="file-info"><span class="icon spin"><i class="fas fa-spinner"></i></span>Uploading</span>
+                                                </li>
+                                                <li tabindex="0">
+                                                    <span class="image">
+                                                        <img src="../img/face.jpg" alt="" />
+                                                        <a href="#" class="download"><i class="fas fa-download"></i></a>
+                                                        <span class="measurement">200 X 200</span>
+                                                    </span>
+                                                    <span class="file-info"><span class="icon"><i class="fas fa-file-image"></i></span>Sample.jpg</span>
+                                                    <span class="size">51.7 KB</span>
+                                                </li>
+                                                <li tabindex="0">
+                                                    <span class="image">
+                                                        <img src="../img/face.jpg" alt="" />
+                                                        <a href="#" class="prev"><i class="fas fa-chevron-left"></i></a>
+                                                        <a href="#" class="next"><i class="fas fa-chevron-right"></i></a>
+                                                        <a href="#" class="download"><i class="fas fa-download"></i></a>
+                                                        <span class="measurement">200 X 200</span>
+                                                    </span>
+                                                    <span class="file-info"><span class="icon"><i class="fas fa-file-image"></i></span>Sample.jpg</span>
+                                                    <span class="size">51.7 KB</span>
+                                                    <a href="#" class="delete" title="첨부파일 삭제"><i class="fas fa-times"></i></a>
+                                                </li>
+                                            </ul>
+                                            <input type="file" id="image" />
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="th">
+                                            <label for="file">파일첨부</label>
+                                        </td>
+                                        <td>
+                                            <ul class="file">
+                                                <li class="no-file">
+                                                    <span class="file-info"><span class="icon"><i class="fas fa-exclamation-triangle"></i></span>No file</span>
+                                                </li>
+                                                <li class="uploading">
+                                                    <span class="file-info"><span class="icon spin"><i class="fas fa-spinner"></i></span>Uploading</span>
+                                                </li>
+                                                <li>
+                                                    <a href="#" class="file-name"><span class="file-info"><span class="icon"><i class="far fa-file-powerpoint"></i></span>발표관련 데이터.ppt</span></a>
+                                                    <span class="size right-side">1.44 MB</span>
+                                                </li>
+                                                <li>
+                                                    <span class="file-info"><span class="icon"><i class="far fa-file-powerpoint"></i></span>발표관련 데이터.ppt</span>
+                                                    <span class="function">
+                                                        <a href="#" class="up" title="순서 위로 올리기"><i class="fas fa-chevron-up"></i></a>
+                                                        <a href="#" class="down" title="순서 아래로 내리기"><i class="fas fa-chevron-down"></i></a>
+                                                        <a href="#" class="delete" title="첨부파일 삭제"><i class="fas fa-times"></i></a>
+                                                        <span class="size">1.44 MB</span>
+                                                    </span>
+                                                </li>
+                                            </ul>
+                                            <input type="file" id="file" />
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </section>
+                </section>    
+            </main>
+            <footer id="footer">
+                <p class="copyright">© 2019 DASH.</p>
+            </footer>
+        </div> 
+    </body>
+</html>
