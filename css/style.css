@@ -12,7 +12,7 @@ table {border-collapse: collapse;}
 address, em {font-style: normal;}
 
 /*common*/
-body {font: 13px '나눔고딕', '돋움', Dotum, Helvetica, 'Apple SD Gothic Neo', 'sans-serif'; color: #333; background: #f1f6fe;}
+body {font: 13px '나눔고딕', '돋움', Dotum, Helvetica, 'Apple SD Gothic Neo', 'sans-serif'; color: #333; background: #d6dfef;}
 #skip-nav {position: fixed; top: -40px; left: 0; width: 100%; line-height: 40px; text-align: center; font-size: 17px; color: #fff; background: rgba(0, 0, 0, 0.5); z-index: 10000; transition: 0.3s;}
 #skip-nav:focus {top: 0;}
 #wrapper {min-width: 1024px;}
@@ -60,70 +60,70 @@ body {font: 13px '나눔고딕', '돋움', Dotum, Helvetica, 'Apple SD Gothic Ne
 section.main-box {padding: 20px 30px;}
 #main.on {padding: 90px 0 0 0;}
 section.main-box h2 {line-height: 30px; color: #4d5664;}
-section.main-box p {line-height: 20px; color: #b4bfd1;}
+section.main-box p {line-height: 20px; color: #687386;}
 section.layout-box ul:after {content: ''; display: block; clear: both;}
 section.layout-box ul.list li {float: left; padding-right: 30px; line-height: 30px;}
 
 /*이미지 첨부*/
-section.layout-box ul.preview li {float: left; width: 200px; height: 200px; margin: 0 10px 10px 0; padding: 5px; border: 1px solid #c4d0e3; border-radius: 3px; box-sizing: border-box; background: #f9fafb;}
-section.layout-box ul.preview span.image {position: relative; display: inline-block; width: 100%; height: 130px; border: 1px solid #c4d0e3; text-align: center; box-sizing: border-box; overflow: hidden; background: #fff;}
-section.layout-box ul.preview span.image span.samplae-icon {line-height: 130px; text-align:  center; font-size: 40px; color: #dae1e6;}
-section.layout-box ul.preview span.image img {max-height: 100%;}
-section.layout-box ul.preview span.measurement {position: absolute; bottom: -17px; left: 0; width: 100%; line-height: 17px; text-align: center; font-size: 13px; color: #fff; background: rgba(0, 0, 0, 0.3); transition: 0.3s;}
-section.layout-box ul.preview li:hover span.measurement,
-section.layout-box ul.preview li:focus span.measurement {bottom: 0;}
-section.layout-box ul.preview span.file-info {display: inline-block; width: 100%; margin: 8px 0;}
-section.layout-box ul.preview span.icon {display: inline-block; margin: 0 8px; color: #647dac;}
-section.layout-box ul.preview span.size {display: inline-block; padding: 2px 5px; border-radius: 3px; color: #fff; background: #89aacb;}
-section.layout-box ul.preview span.spin i {animation: spin 3.2s infinite;}
-section.layout-box ul.preview a.prev {position: absolute; top: 5px; left: 5px; width: 24px; line-height: 24px; border-radius: 30px; text-align: center; background: rgba(0, 0, 0, 0.3); color: #fff; opacity: 0; transition: 0.3s;}
-section.layout-box ul.preview li:hover a.prev,
-section.layout-box ul.preview li:focus a.prev {opacity: 1;}
-section.layout-box ul.preview li a.prev:focus {opacity: 1;}
-section.layout-box ul.preview a.next {position: absolute; top: 5px; right: 5px; width: 24px; line-height: 24px; border-radius: 30px; text-align: center; background: rgba(0, 0, 0, 0.3); color: #fff; opacity: 0; transition: 0.3s;}
-section.layout-box ul.preview li:hover a.next,
-section.layout-box ul.preview li:focus a.next {opacity: 1;}
-section.layout-box ul.preview li a.next:focus {opacity: 1;}
-section.layout-box ul.preview a.download {position: absolute; top: 50%; left: 50%; width: 30px; line-height: 30px; transform: translate(-50%, -50%); border-radius: 30px; text-align: center; background: rgba(0, 0, 0, 0.3); color: #fff; opacity: 0; transition: 0.3s;}
-section.layout-box ul.preview li:hover a.download,
-section.layout-box ul.preview li:focus a.download,
-section.layout-box ul.preview li a.download:focus {width: 40px; line-height: 40px; font-size: 15px; opacity: 1;}
-section.layout-box ul.preview li:hover a.download:hover,
-section.layout-box ul.preview li a.download:focus,
-section.layout-box ul.preview li:hover a.prev:hover,
-section.layout-box ul.preview li a.prev:focus,
-section.layout-box ul.preview li:hover a.next:hover,
-section.layout-box ul.preview li a.next:focus {background: rgba(0, 0, 0, 0.6);}
-section.layout-box ul.preview a.delete {float: right; width: 25px; height: 25px; border-radius: 30px; transform: translateY(-2px); text-align: center; font-size: 22px; color: #d45353;}
-section.layout-box ul.preview a.delete:hover,
-section.layout-box ul.preview a.delete:focus {color: #ea9393;}
+div.layout-box ul.preview li {float: left; width: 200px; height: 200px; margin: 0 10px 10px 0; padding: 5px; border: 1px solid #c4d0e3; border-radius: 3px; box-sizing: border-box; background: #dce4eb;}
+div.layout-box ul.preview span.image {position: relative; display: inline-block; width: 100%; height: 130px; border: 1px solid #c4d0e3; text-align: center; box-sizing: border-box; overflow: hidden; background: #fff;}
+div.layout-box ul.preview span.image span.samplae-icon {line-height: 130px; text-align:  center; font-size: 40px; color: #dae1e6;}
+div.layout-box ul.preview span.image img {max-height: 100%;}
+div.layout-box ul.preview span.measurement {position: absolute; bottom: -17px; left: 0; width: 100%; line-height: 17px; text-align: center; font-size: 13px; color: #fff; background: rgba(0, 0, 0, 0.3); transition: 0.3s;}
+div.layout-box ul.preview li:hover span.measurement,
+div.layout-box ul.preview li:focus span.measurement {bottom: 0;}
+div.layout-box ul.preview span.file-info {display: inline-block; width: 100%; margin: 8px 0;}
+div.layout-box ul.preview span.icon {display: inline-block; margin: 0 8px; color: #647dac;}
+div.layout-box ul.preview span.size {display: inline-block; padding: 2px 5px; border-radius: 3px; color: #fff; background: #89aacb;}
+div.layout-box ul.preview span.spin i {animation: spin 3.2s infinite;}
+div.layout-box ul.preview a.prev {position: absolute; top: 5px; left: 5px; width: 24px; line-height: 24px; border-radius: 30px; text-align: center; background: rgba(0, 0, 0, 0.3); color: #fff; opacity: 0; transition: 0.3s;}
+div.layout-box ul.preview li:hover a.prev,
+div.layout-box ul.preview li:focus a.prev {opacity: 1;}
+div.layout-box ul.preview li a.prev:focus {opacity: 1;}
+div.layout-box ul.preview a.next {position: absolute; top: 5px; right: 5px; width: 24px; line-height: 24px; border-radius: 30px; text-align: center; background: rgba(0, 0, 0, 0.3); color: #fff; opacity: 0; transition: 0.3s;}
+div.layout-box ul.preview li:hover a.next,
+div.layout-box ul.preview li:focus a.next {opacity: 1;}
+div.layout-box ul.preview li a.next:focus {opacity: 1;}
+div.layout-box ul.preview a.download {position: absolute; top: 50%; left: 50%; width: 30px; line-height: 30px; transform: translate(-50%, -50%); border-radius: 30px; text-align: center; background: rgba(0, 0, 0, 0.3); color: #fff; opacity: 0; transition: 0.3s;}
+div.layout-box ul.preview li:hover a.download,
+div.layout-box ul.preview li:focus a.download,
+div.layout-box ul.preview li a.download:focus {width: 40px; line-height: 40px; font-size: 15px; opacity: 1;}
+div.layout-box ul.preview li:hover a.download:hover,
+div.layout-box ul.preview li a.download:focus,
+div.layout-box ul.preview li:hover a.prev:hover,
+div.layout-box ul.preview li a.prev:focus,
+div.layout-box ul.preview li:hover a.next:hover,
+div.layout-box ul.preview li a.next:focus {background: rgba(0, 0, 0, 0.6);}
+div.layout-box ul.preview a.delete {float: right; width: 25px; height: 25px; border-radius: 30px; transform: translateY(-2px); text-align: center; font-size: 22px; color: #d45353;}
+div.layout-box ul.preview a.delete:hover,
+div.layout-box ul.preview a.delete:focus {color: #ea9393;}
 
 /*파일첨부*/
-section.layout-box ul.file li {position: relative; width: 100%; margin-bottom: 6px; border: 1px solid #c4d0e3; border-radius: 3px; box-sizing: border-box;}
-section.layout-box ul.file span.file-info {line-height: 30px;}
-section.layout-box ul.file span.size {padding: 2px 5px; border-radius: 3px; color: #fff; background: #89aacb;}
-section.layout-box ul.file span.icon {display: inline-block; margin: 0 8px; color: #647dac;}
-section.layout-box ul.file span.spin i {animation: spin 3.2s infinite;}
-section.layout-box ul.file a.file-name {display: inline-block; width: 70%;}
-section.layout-box ul.file a.file-name:hover,
-section.layout-box ul.file a.file-name:focus {font-weight: 700;}
-section.layout-box ul.file span.right-side {float: right; margin: 5px;}
-section.layout-box ul.file span.function {position: absolute; right: 5px; line-height: 30px;}
-section.layout-box ul.file a.up {display: inline-block; width: 24px; line-height: 24px; border-radius: 30px; text-align: center; background: rgba(0, 0, 0, 0.3); color: #fff; opacity: 0; transition: 0.3s;}
-section.layout-box ul.file li:hover a.up,
-section.layout-box ul.file li:focus a.up {opacity: 1;}
-section.layout-box ul.file li a.up:focus {opacity: 1;}
-section.layout-box ul.file a.down {display: inline-block; width: 24px; line-height: 24px; border-radius: 30px; text-align: center; background: rgba(0, 0, 0, 0.3); color: #fff; opacity: 0; transition: 0.3s;}
-section.layout-box ul.file li:hover a.down,
-section.layout-box ul.file li:focus a.down {opacity: 1;}
-section.layout-box ul.file li a.down:focus {opacity: 1;}
-section.layout-box ul.file li:hover a.up:hover,
-section.layout-box ul.file li:focus a.up:focus,
-section.layout-box ul.file li:hover a.down:hover,
-section.layout-box ul.file li:focus a.down:focus {background: rgba(0, 0, 0, 0.6);}
-section.layout-box ul.file a.delete {display: inline-block; width: 25px; line-height: 25px; border-radius: 30px; transform: translateY(4px); text-align: center; font-size: 22px; color: #d45353;}
-section.layout-box ul.file a.delete:hover,
-section.layout-box ul.file a.delete:focus {color: #ea9393;}
+div.layout-box ul.file li {position: relative; width: 100%; margin-bottom: 6px; border: 1px solid #c4d0e3; border-radius: 3px; box-sizing: border-box;}
+div.layout-box ul.file span.file-info {line-height: 30px;}
+div.layout-box ul.file span.size {padding: 2px 5px; border-radius: 3px; color: #fff; background: #89aacb;}
+div.layout-box ul.file span.icon {display: inline-block; margin: 0 8px; color: #647dac;}
+div.layout-box ul.file span.spin i {animation: spin 3.2s infinite;}
+div.layout-box ul.file a.file-name {display: inline-block; width: 70%;}
+div.layout-box ul.file a.file-name:hover,
+div.layout-box ul.file a.file-name:focus {font-weight: 700;}
+div.layout-box ul.file span.right-side {float: right; margin: 5px;}
+div.layout-box ul.file span.function {position: absolute; right: 5px; line-height: 30px;}
+div.layout-box ul.file a.up {display: inline-block; width: 24px; line-height: 24px; border-radius: 30px; text-align: center; background: rgba(0, 0, 0, 0.3); color: #fff; opacity: 0; transition: 0.3s;}
+div.layout-box ul.file li:hover a.up,
+div.layout-box ul.file li:focus a.up {opacity: 1;}
+div.layout-box ul.file li a.up:focus {opacity: 1;}
+div.layout-box ul.file a.down {display: inline-block; width: 24px; line-height: 24px; border-radius: 30px; text-align: center; background: rgba(0, 0, 0, 0.3); color: #fff; opacity: 0; transition: 0.3s;}
+div.layout-box ul.file li:hover a.down,
+div.layout-box ul.file li:focus a.down {opacity: 1;}
+div.layout-box ul.file li a.down:focus {opacity: 1;}
+div.layout-box ul.file li:hover a.up:hover,
+div.layout-box ul.file li:focus a.up:focus,
+div.layout-box ul.file li:hover a.down:hover,
+div.layout-box ul.file li:focus a.down:focus {background: rgba(0, 0, 0, 0.6);}
+div.layout-box ul.file a.delete {display: inline-block; width: 25px; line-height: 25px; border-radius: 30px; transform: translateY(4px); text-align: center; font-size: 22px; color: #d45353;}
+div.layout-box ul.file a.delete:hover,
+div.layout-box ul.file a.delete:focus {color: #ea9393;}
 
 @keyframes spin {
     0% {transform: rotate(0deg);}
